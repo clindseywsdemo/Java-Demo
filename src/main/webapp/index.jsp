@@ -10,7 +10,7 @@
     session.removeAttribute("dlpinit");
     ResourceBundle rb = ResourceBundle.getBundle("messages", request.getLocale());
     String permName = rb.getString("label.metaspace");
-    String permNameInErrorMsg = permName;
+    String permNameInErrorMsg =permName;
     String javaVersion = System.getProperty("java.version");
     if (javaVersion.startsWith("1.6") || javaVersion.startsWith("1.7")) {
         permName = rb.getString("label.permgen.space");
